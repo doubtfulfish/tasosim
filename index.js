@@ -3,8 +3,8 @@ const { execFile } = require("child_process");
 const { Buffer } = require("node:buffer");
 
 const PORT = 3000;
-const serverName = "KBD Server";
-const controllerName = "Some Controller";
+const serverName = "TasoSim Server";
+const controllerName = "Web Controller";
 
 const app = express();
 app.use(express.static("public"));
@@ -13,6 +13,7 @@ const wss = require("express-ws")(app);
 let gameClient;
 let kbdClient;
 
+// websocket route for Umiguri LED
 app.ws("/", function (ws, req) {
     gameClient = ws;
 
@@ -28,7 +29,7 @@ app.ws("/", function (ws, req) {
         // SetLED
         if (type == 0x10) {
             res = {
-                brightness: 100,
+                brightness: Number(data[3]) / 255,
                 land: [],
                 border: [],
                 air: [],

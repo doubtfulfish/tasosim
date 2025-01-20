@@ -16,9 +16,6 @@ body {
 .section {
     flex: 1;
     display: flex;
-
-    border: 0.1em solid aqua;
-    background-color: purple;
 }
 
 .air {
@@ -31,6 +28,20 @@ body {
 
 .key {
     flex: 1;
-    border: 0.1em solid black;
     background-color: grey;
+}
+
+.border-air {
+    height: 0.16rem;
+    background-color: black;
+}
+
+.border-land {
+    width: 0.16rem;
+    background-color: black;
+}
+
+.seperator {
+    height: 0.2rem;
+    background-color: black;
 }
