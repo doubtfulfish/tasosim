@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+
+    touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.section {
+    flex: 1;
+    display: flex;
+
+    border: 0.1em solid aqua;
+    background-color: purple;
+}
+
+.air {
+    flex-direction: column;
+}
+
+.slider {
+    flex-direction: row;
+}
+
+.key {
+    flex: 1;
+    border: 0.1em solid black;
+    background-color: grey;
+}
