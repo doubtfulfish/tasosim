@@ -1,5 +1,7 @@
-# TasoSim
+## IMPORTANT NOTE
+This is a personal project for learning purposes, consider [`slidershim`](https://github.com/4yn/slidershim) instead.
 
+# TasoSim
 Web based controller for 16 key base and 5 air keys mapped to the Yuancon layout.
 
 Inspired by [`brokenithm-kb`](https://github.com/4yn/brokenithm-kb) with support for Umiguri LED websocket protocol.
